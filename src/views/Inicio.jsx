@@ -1,4 +1,11 @@
 import React from 'react'
+import Navbar from '/src/components/Navbar.jsx'
+import Footer from '/src/components/Footer.jsx'
+import Parrafoimg from '/src/components/Parrafoimg.jsx'
+import Carrusel from '/src/components/Carrusel.jsx'
+import ImgHov from '/src/components/ImgHov.jsx'
+import BotonSubir from '/src/components/BotonSubir.jsx'
+
 
 function Inicio() {
     return (
@@ -21,7 +28,7 @@ function Inicio() {
                 </div>
             </div>
             <div className="row m-5"></div>
-            <Parrafoimg titulo={"¿CÓMO FUNCIONA BIOMAP?"} imagen={"https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihb75EdVPBYCcRA-jpPjDIUEvRpHks-bL9wJl70KD6vWgdxjoFskuzG9uaAoyjEMDcXQCF5jQuBzDed42WGir57IVUw_mK595E8=w958-h918"} />
+            <Parrafoimg titulo={"¿CÓMO FUNCIONA BIOMAP?"} imagen={"https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYM5xdFNn6V2kdSmD1_dk6Kv2AOAVG49LeXVV6AiXtM2K0ehYmSgPBntCl75m17GX8KsS0sm41WMM5N4gU9NJ30Na-069StK_4=w958-h918-rw-v1"} />
             <div className="row m-5"></div>
             <Footer />
         </div>

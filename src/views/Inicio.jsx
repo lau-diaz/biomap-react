@@ -1,16 +1,13 @@
 import React from 'react'
-import Navbar from '/src/components/Navbar.jsx'
-import Footer from '/src/components/Footer.jsx'
 import Parrafoimg from '/src/components/Parrafoimg.jsx'
 import Carrusel from '/src/components/Carrusel.jsx'
 import ImgHov from '/src/components/ImgHov.jsx'
 import BotonSubir from '/src/components/BotonSubir.jsx'
-
+import './Fondo.css'
 
 function Inicio() {
     return (
         <div>
-            <Navbar />
             <BotonSubir />
             <div className="row m-5 p-3"></div>
             <Parrafoimg titulo={"BIENVENIDO"} imagen={"https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYM5xdFNn6V2kdSmD1_dk6Kv2AOAVG49LeXVV6AiXtM2K0ehYmSgPBntCl75m17GX8KsS0sm41WMM5N4gU9NJ30Na-069StK_4=w958-h918-rw-v1"} />
@@ -30,7 +27,6 @@ function Inicio() {
             <div className="row m-5"></div>
             <Parrafoimg titulo={"¿CÓMO FUNCIONA BIOMAP?"} imagen={"https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYM5xdFNn6V2kdSmD1_dk6Kv2AOAVG49LeXVV6AiXtM2K0ehYmSgPBntCl75m17GX8KsS0sm41WMM5N4gU9NJ30Na-069StK_4=w958-h918-rw-v1"} />
             <div className="row m-5"></div>
-            <Footer />
         </div>
     )
 }

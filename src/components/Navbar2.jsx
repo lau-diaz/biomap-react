@@ -1,8 +1,8 @@
 import React from "react"
-import './Navbar.css'
+import './Navbar2.css'
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar2 = () => {
     return (
         <div id="barraDeNavegacion">
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -22,21 +22,17 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                                <Link className="nav-link active" aria-current="page" to="/mapa-general">Menú</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="que-es-biomap.html">¿Qué es Biomap?</a>
+                                <a className="nav-link" href="que-es-biomap.html">Mapa</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="Quienes_somos.html">Sobre Nosotras</a>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/mapa-general">BOTON DE PRUEBA</Link>
+                                <a className="nav-link" href="Quienes_somos.html">Cápsulas Informativas</a>
                             </li>
                         </ul>
                         <form className="container-flex justify-content-end">
-                            <button id="botonIniciar" className="btn btn-warning me-2" type="button" href="./login/">Iniciar Sesión</button>
-                            <button id="botonRegistrar" className="btn btn-sm btn-danger" type="button">Registrarse</button>
+                            <button id="botonCerrar" className="btn btn-sm btn-danger" type="button"><Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Cerrar Sesión</Link></button>
                         </form>
                     </div>
                 </div>
@@ -45,4 +41,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar2
